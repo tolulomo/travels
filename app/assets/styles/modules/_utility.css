@@ -35,8 +35,16 @@
     }
 
     &--no-margin {
+        margin: 0;
+        @mixin atMedium{
+           
+        }
+    }
+
+    &--no-top-margin {
         @mixin atMedium{
             margin-top: 0;
         }
     }
+
 }
