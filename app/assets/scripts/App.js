@@ -1,1 +1,5 @@
-alert("Hello this is just a text");
+import '../styles/style.css'
+
+if(module.hot){
+    module.hot.accept();
+}

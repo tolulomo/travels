@@ -1,0 +1,42 @@
+.wrapper {
+    padding-left: 1.1875rem;
+    padding-right: 1.1875rem;
+    max-width: 77.375rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    &--medium {
+        max-width: 61rem;
+    }
+
+    .wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.u {
+    &--margin {
+        &-small {
+            margin-bottom: .5em;
+        }
+
+        &-medium {
+            margin-bottom: 1.6em;
+        }
+
+        &-large {
+            margin-bottom: 1rem;
+
+            @mixin atSmall {
+                margin-bottom: 3.875rem;
+            }
+        }
+    }
+
+    &--no-margin {
+        @mixin atMedium{
+            margin-top: 0;
+        }
+    }
+}

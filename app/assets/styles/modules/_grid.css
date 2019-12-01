@@ -1,0 +1,48 @@
+.row {
+    @mixin clearfix {
+
+    }
+
+    &--gutter > div {
+        &:not(:last-child){
+            @mixin atMedium {
+                padding-right: 4.0625rem;
+            }
+        }
+    }
+}
+
+.column-1-of-4 {
+    @mixin atMedium {
+        float: left;
+        width: 25%;
+    }
+
+    &--enlarge {
+        @mixin atMedium {
+            width: 29%;
+        } 
+    }
+}
+
+
+
+.column-2-of-4 {
+    @mixin atMedium {
+        float: left;
+        width: 50%; 
+    }
+}
+
+.column-3-of-4 {
+    @mixin atMedium {
+        float: left;
+        width: 75%; 
+    }
+
+    &--reduce {
+        @mixin atMedium {
+            width: 71%;
+        }   
+    }
+}

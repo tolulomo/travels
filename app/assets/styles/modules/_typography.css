@@ -1,0 +1,16 @@
+.para__container{
+    p {
+        line-height: 1.65;
+        margin: 1.4rem 0;
+
+        @mixin atMedium {
+            font-size: 1.125rem;
+        }
+    }
+
+    p a {
+        font-weight: 700;
+        color: $mainOrange;
+    }
+
+}
