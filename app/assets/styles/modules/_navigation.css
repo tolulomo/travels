@@ -1,0 +1,36 @@
+.navigation {
+    
+    & > ul {
+        margin: 0;
+        padding: .7rem 0;
+        @mixin clearfix {}
+
+        & > li {
+            list-style: none;
+            float: left;
+            padding-right: 1.25rem;
+            
+            & > a {
+                text-decoration: none;
+                font-weight: 300;
+                color: $white;
+            }
+        }
+    } 
+    &--float-right {
+        float: right;
+    }
+
+    &__mobile-icon {
+        background-color: $white;
+        height: 2.5rem;
+        width: 2.5rem;
+        position: absolute;
+        top: 0.625rem;
+        right: 0.625rem;
+
+        @mixin atMedium {
+            display: none;
+        }
+    }
+}
