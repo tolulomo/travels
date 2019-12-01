@@ -15,6 +15,15 @@
         color: $mainOrange;
     }
 
+    &--regular {
+        font-size: .8375rem;
+        font-weight: 400;
+
+        @mixin atSmall {
+            font-size: .9375rem;
+        }
+    }
+
     &--small {
         font-size: 1.2rem;
 
