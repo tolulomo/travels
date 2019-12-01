@@ -1,7 +1,7 @@
 .para__container{
     p {
         line-height: 1.65;
-        margin: 1.4rem 0;
+        margin: 0 0 1.4rem 0;
 
         @mixin atMedium {
             font-size: 1.125rem;

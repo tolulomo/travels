@@ -16,7 +16,7 @@
 }
 
 .u {
-    &--margin {
+    &--margin-bottom {
         &-small {
             margin-bottom: .5em;
         }

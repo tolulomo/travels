@@ -2,11 +2,25 @@
     @mixin clearfix {
 
     }
+    &--gutter {
+        padding-right: -4.0625rem;
 
+        &-large {
+            padding-right: -5.45rem;
+        }
+    }
     &--gutter > div {
         &:not(:last-child){
             @mixin atMedium {
                 padding-right: 4.0625rem;
+            }
+        }
+    }
+
+    &--gutter-large > div {
+        &:not(:last-child){
+            @mixin atMedium {
+                padding-right: 5.45rem;
             }
         }
     }

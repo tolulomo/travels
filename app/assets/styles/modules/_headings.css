@@ -23,6 +23,21 @@
         }
     }
 
+    &--medium {
+        font-size: 1.675rem;
+
+        @mixin atMedium {
+            font-size: 1.9rem;
+        }
+    }
+
+    &--large {
+        font-size: 3rem;
+        @mixin atMedium {
+            font-size: 4.75rem;
+        }
+    }
+
     &--narrow {
         max-width: 31.25rem;
         margin-left: auto;
@@ -31,5 +46,26 @@
 
     &--bold {
         font-weight: 300;
+    }
+
+    &--white {
+        color: $white;
+    }
+
+    &__icon {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: .5rem;
+
+        @mixin atSmall {
+            margin: 0 1rem -.5rem 0;
+            display: inline-block;            
+        }
+
+        @mixin atMedium {
+            margin: 0 1rem -.25rem 0;
+            display: inline-block;            
+        }
     }
 }
