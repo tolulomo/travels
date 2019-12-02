@@ -13,6 +13,7 @@ class MobileMenu {
     toggleMenu(){
         this.headerContainer.classList.toggle("page-section__header--mobile-menu-bg");
         this.menuContainer.classList.toggle("page-section__header-toggle-menu");
+        this.icon.classList.toggle("navigation__mobile-icon--toggle");
     }
 }
 
