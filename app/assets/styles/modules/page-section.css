@@ -15,20 +15,48 @@
         padding: .625rem 0;
         z-index: 1;
         width: 100%;
+        transition: background-color .4s ease-out;
+
+        &--mobile-menu-bg {
+            background-color: rgba($mainBlue,.55);
+        }
 
         @mixin atMedium {
             background-color: rgba($mainBlue,.3);
         }
 
         &-container {
-            display: none;
+            opacity: 0;
+            z-index: -10;
+            position: relative;
+            padding-top: 5.68rem;
+            text-align: center;
+            transform: scale(1.4);
+            transition: all .4s ease-out;
+
+            @mixin atSmall {
+                padding-top: 7.25rem;
+            }
+
             @mixin atMedium {
+                opacity: 1;
+                z-index: 1;
                 display: block;
+                padding-top: 0;
+                transform: scale(1);
             }
         }
 
+        &-toggle-menu {
+            transform: scale(1);
+            opacity: 1;
+            z-index: 1;
+        }
+
         &-btn {
-            float: right;
+            @mixin atMedium {
+                float: right;
+            }
         }
 
         &-logo {

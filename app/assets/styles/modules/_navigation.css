@@ -7,18 +7,40 @@
 
         & > li {
             list-style: none;
-            float: left;
-            padding-right: 1.25rem;
+            display: inline-block;
+            padding-right: .5rem;
+
+            &:last-child {
+                padding-right: 0;
+
+                @mixin atMedium {
+                    padding-right: 1.25rem;
+                }
+            }
+
+            @mixin atMedium {
+                padding-right: 1.25rem;
+                float: left;
+                display: block;
+            }
             
             & > a {
                 text-decoration: none;
                 font-weight: 300;
                 color: $white;
+                background-color: rgba($mainBlue, .7);
+
+                @mixin atMedium {
+                    padding: 0;
+                    background-color: transparent;
+                }
             }
         }
     } 
     &--float-right {
-        float: right;
+        @mixin atMedium {
+            float: right;
+        }
     }
 
     &__mobile-icon {
@@ -28,6 +50,7 @@
         position: absolute;
         top: 0.625rem;
         right: 0.625rem;
+        z-index: 5;
 
         @mixin atMedium {
             display: none;
