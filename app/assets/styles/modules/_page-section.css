@@ -22,7 +22,12 @@
         }
 
         @mixin atMedium {
+            position: fixed;
             background-color: rgba($mainBlue,.3);
+
+            &--darker {
+                background-color: rgba($darkerBlue,.85);
+            }
         }
 
         &-container {
@@ -68,11 +73,17 @@
             transform: translateX(-50%);
             position: absolute;
             background-color: $mainBlue;
+            transform-origin: 50% 0;;
+            transition: transform 1.2s ease-out;
 
             @mixin atMedium {
                 left: auto;
                 transform: translateX(0);
                 padding: 1.5625rem 2.25rem;
+
+                .page-section__header--darker & {
+                    transform: scale(0.55);
+                }
             }
         }
     }
@@ -109,7 +120,6 @@
             left: 0;
         }
        }
-
     }
 
     &__testimonials {

@@ -33,7 +33,6 @@ class ScrollReveal {
                     window.removeEventListener("scroll", this.scrollThrottle)
                 }
             }
-            return;
         })
     }
 

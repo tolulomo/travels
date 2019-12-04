@@ -1,10 +1,10 @@
-import '../styles/style.css'
-import MobileMenu from './jsmodules/MobileMenu';
-import ScrollReveal from './jsmodules/ScrollReveal';
+import '../styles/style.css';
+import { MobileMenu, ScrollReveal, NavScroll } from './jsmodules';
 
 const browserHeight = window.innerHeight
 
-const Menu = new MobileMenu();
+const menu = new MobileMenu();
+const navScroll = new NavScroll(browserHeight);
 new ScrollReveal(document.querySelectorAll(".page-section__features"), 80, browserHeight);
 new ScrollReveal(document.querySelectorAll(".page-section__testimonials--container"), 75, browserHeight);
 
