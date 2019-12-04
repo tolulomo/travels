@@ -1,0 +1,12 @@
+.animation {
+    &--hide-item{
+        transform: scale(0.2);
+        opacity: 0;
+        transition: all 1.2s ease-out;
+    }
+
+    &--reveal-item {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
