@@ -2,11 +2,12 @@
 @import 'base/_global';
 @import 'base/_mixins';
 @import 'base/_variables';
+@import 'modules/_animation.css';
 @import 'modules/_button';
 @import 'modules/_grid.css';
 @import 'modules/_headings.css';
 @import 'modules/_large-hero';
-@import 'modules/page-section.css';
+@import 'modules/_page-section.css';
 @import 'modules/_typography.css';
 @import 'modules/_utility.css';
 @import 'modules/_navigation.css';
