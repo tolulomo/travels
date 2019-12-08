@@ -2,14 +2,15 @@
 @import 'base/_global';
 @import 'base/_mixins';
 @import 'base/_variables';
-@import 'modules/_animation.css';
+@import 'modules/_animation';
 @import 'modules/_button';
 @import 'modules/_grid.css';
-@import 'modules/_headings.css';
+@import 'modules/_headings';
 @import 'modules/_large-hero';
-@import 'modules/_page-section.css';
-@import 'modules/_typography.css';
-@import 'modules/_utility.css';
-@import 'modules/_navigation.css';
+@import 'modules/_modal';
+@import 'modules/_navigation';
+@import 'modules/_page-section';
+@import 'modules/_typography';
+@import 'modules/_utility';
 
 

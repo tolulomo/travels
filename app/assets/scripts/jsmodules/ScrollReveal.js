@@ -40,7 +40,7 @@ class ScrollReveal {
         this.itemContainer.forEach((el, index, array) => {
             el.classList.add("animation--hide-item");
             if(index === array.length - 1) {
-                el.isLastElement = true
+                el.isLastElement = true;
             }
         })
     }

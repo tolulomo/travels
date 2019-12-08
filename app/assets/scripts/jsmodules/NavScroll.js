@@ -39,7 +39,7 @@ class NavScroll {
     getPageSection(el){
         if(window.scrollY + this.browserHeight > el.offsetTop && window.scrollY < el.offsetTop + el.offsetHeight){
             let itemPlace = (el.getBoundingClientRect().y/this.browserHeight)*100;
-            if(itemPlace < 18 && itemPlace > -0.1 && this.scrollDirectionValue == "down" || itemPlace < 33 && this.scrollDirectionValue == "up"){
+            if(itemPlace < 28 && itemPlace > -0.1 && this.scrollDirectionValue == "down" || itemPlace < 33 && this.scrollDirectionValue == "up"){
                 let matchingLinks = el.getAttribute("data-matching-link");
                 document.querySelectorAll(`.navigation a:not(#${matchingLinks})`).forEach(el => el.classList.remove("is-current-link"));
                 document.querySelector(`#${matchingLinks}`).classList.add("is-current-link");
