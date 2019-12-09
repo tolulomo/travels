@@ -1,5 +1,6 @@
 import '../styles/style.css';
-import { MobileMenu, ScrollReveal, NavScroll, Modal } from './jsmodules';
+import 'lazysizes';
+import { MobileMenu, ScrollReveal, NavScroll } from './jsmodules';
 
 const openModalButtons = document.querySelectorAll(".btn");
 
